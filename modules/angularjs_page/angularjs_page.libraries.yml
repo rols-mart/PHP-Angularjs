@@ -1,0 +1,10 @@
+angularjs:
+  version: VERSION
+  js:
+    'https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js':  {type: external}
+    
+angularjs_page:
+  js:
+    js/angularjs_page.js: {}
+  dependencies:
+    - angularjs_page/angularjs

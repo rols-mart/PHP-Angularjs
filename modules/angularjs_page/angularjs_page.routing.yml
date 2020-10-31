@@ -1,0 +1,7 @@
+angularjs_page.view:
+  path: '/angularjs_page'
+  defaults:
+    _title: 'AngularJS Custom Module'
+    _controller: '\Drupal\angularjs_page\Controller\AngularJSPageController::viewAngularJSPage'
+  requirements:
+    _permission: 'access content'

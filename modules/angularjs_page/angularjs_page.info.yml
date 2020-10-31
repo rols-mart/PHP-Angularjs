@@ -1,0 +1,4 @@
+name: AngularJS Custom Module
+type: module
+description: 'A module to use angularjs implementation in Drupal 8'
+core: 8.x

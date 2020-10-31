@@ -1,0 +1,33 @@
+<h2>{{  title }}</h2>
+
+<div ng-app="myModule">
+  
+  <div ng-controller="myController">
+    {% verbatim %}
+      {{ message }}
+      <input 
+        type="number" 
+        ng-model="articlesNumber" 
+        ng-change="change(articlesNumber)" 
+        min="1"
+        value="{{articlesNumber}}">
+    
+    <table ng-table>
+    
+      <tr>
+        <th>Title</th>
+        <th>Comment</th>
+        <th>Format</th>
+        <th>Created</th>
+      </tr>
+      <tr ng-repeat="item in res">
+        <td>   <a href="/drupal/node/{{item.attributes.drupal_internal__nid}}">{{item.attributes.title}}</a> </td>
+        <td>  {{item.attributes.comment.comment_count}} </td>
+        <td>  {{item.attributes.body.format}} </td>
+        <td>  {{item.attributes.created}} </td>
+      </tr>
+    {% endverbatim %}
+    </table>
+  </div>
+</div>
+
